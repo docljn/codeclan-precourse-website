@@ -1,0 +1,96 @@
+
+/*BASIC LAYOUT*/
+
+/* Set border box for simplicity */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ensures all elements have same basic structure */
+
+.container,
+.grid {
+	margin: 0 auto; /* centers content on page */
+	width: 960px;
+	border: 3px solid red;
+}
+
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px 20px;
+}
+
+.main {
+
+}
+
+.nav {
+	min-height: 80px;
+	line-height: 40px;
+}
+
+.row {
+	background: #fff;
+	padding-top: 40px ;
+	padding-bottom: 60px;
+}
+
+.row-alt {
+	background-color: #ccc;
+	background: #215ea8;
+  background:    -moz-linear-gradient(left, #215ea8 1%, #7db9e8 100%);
+  background: -webkit-linear-gradient(left, #215ea8 1%,#7db9e8 100%);
+  background:         linear-gradient(to right, #215ea8 1%,#7db9e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#215ea8', endColorstr='#7db9e8',GradientType=1 );
+	height: 160px;
+
+}
+
+
+
+
+
+
+/*HOME PAGE STYLES*/
+
+.teaser {
+	border: 1px solid #215ea8;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+
+/*TYPOGRAPHY*/
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+	font-weight: 900;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+
+
+
