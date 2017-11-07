@@ -10,13 +10,13 @@
           box-sizing: border-box;
 }
 
-/* ensures all elements have same basic structure */
+/* DEFAULTS ensures all elements have same basic structure */
 
 .container,
 .grid {
 	margin: 0 auto; /* centers content on page */
-	width: 960px;
-	border: 3px solid red;
+	width: 95%;
+	min-width: 36em;
 }
 
 .container {
@@ -24,29 +24,29 @@
 	padding-right: 20px;
 }
 
+
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px 20px;
 }
 
-.main {
 
+
+.nav li{
+	display: inline-block;
+	padding-left: 0.5em;
 }
 
-.nav {
-	min-height: 80px;
-	line-height: 40px;
-}
 
 .row {
 	background: #fff;
 	padding-top: 40px ;
-	padding-bottom: 60px;
+	padding-bottom: 20px;
 }
 
 .row-alt {
-	background-color: #ccc;
 	background: #215ea8;
   background:    -moz-linear-gradient(left, #215ea8 1%, #7db9e8 100%);
   background: -webkit-linear-gradient(left, #215ea8 1%,#7db9e8 100%);
@@ -54,31 +54,47 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#215ea8', endColorstr='#7db9e8',GradientType=1 );
 	height: 160px;
 
+	border: 1px solid white;
+	border-radius: 8px;
+
+	color: #fff;
+	text-align: center;
 }
 
-
-
-
-
-
-/*HOME PAGE STYLES*/
-
-.teaser {
-	border: 1px solid #215ea8;
-	border-radius: 5px;
-	padding: 20px;
+.left-abs {
+	position: absolute;
+	left: 0;
+	margin-left: 0.5em;
 }
+
+.right-abs {
+	position: absolute;
+	right: 0;
+	margin-right: 0.5em;
+}
+
+header,
+footer {
+	color: black;
+	display: block;
+	line-height: 80px;
+	min-height: 80px;
+	position: relative;  /*hoping this will allow abs position inside*/
+}
+
 
 
 /*TYPOGRAPHY*/
 
+
 body {
 	font-family: Arial, sans-serif;
+	color: #215ea8;
 }
 
 h1,
 h2 {
-	font-weight: 900;
+	font-weight: bold;
 	line-height: 1.5em;
 	text-align: center;
 }
@@ -90,6 +106,48 @@ h1 {
 h2 {
 	font-size: 2em;
 }
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #215ea8;
+}
+
+/*BUTTONS AND NAVIGATION*/
+
+.btn {
+	background-color: #7db9e8;
+	border: 1px solid #215ea8;
+	border-radius: 12px;
+	color: #215ea8;
+	display: inline-block;
+	line-height: 1.5em;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 7em;
+}
+
+.btn:active {
+	position:relative;
+	top: 2px;
+}
+
+
+
+
+/*HOME PAGE STYLES*/
+
+.teaser {
+	border: 1px solid #215ea8;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+
 
 
 

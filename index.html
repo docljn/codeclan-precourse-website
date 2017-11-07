@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>DocLJN</title>
   <meta name="description" content="Introduction to DocLJN">
   <meta name="author" content="DocLJN">
@@ -13,44 +12,65 @@
 </head>
 
 <body>
-  <header class="container nav">
-  	<figure>headshot of me<img src="" alt="">
+  <header class="container">
+  	<figure class="left-abs"><!--<img src="" alt="headshot of DocLJN">-->
   	</figure>
 
-  	<nav class>
-  		<a href="">home</a> <a href="">coding</a> <a href="">making</a> <a href="">working</a>
+  	<nav>
+  		<ul class="nav right-abs">
+  			<li><a class="btn" href="index.html">home</a>
+  			</li><!--
+  			--><li><a class="btn" href="coding.html">coding</a>
+  			</li><!--
+  			--><li><a class="btn" href="making.html">making</a>
+  			</li><!--
+  			--><li><a class="btn" href="working.html">working</a>
+  			</li>
+  		</ul>
+
   	</nav>
   </header>
 
   <section class="container hero row-alt">
   	<h1>DocLJN</h1>
-  	<p>brief intro with background gradient or something pretty</p>
+  	<p>Some sort of clever tagline or intro here.</p>
   </section><!--hero-->
 
-  <section class="main grid row">
+  <section class="grid row">
   		<div class="teaser">
-  			<h2>Coding</h2>
-  			<p>blurble blurble blurble
-  			</p>
+  			<a href="coding.html">
+	  			<h2>Coding</h2>
+	  			<p>blurble blurble blurble
+	  			</p>
+	  		</a>
   		</div><!--
   		--><div class="teaser">
-  			<h2>Making</h2>
-  			<p>blurble blurble blurble
-  			</p>
+  			<a href="making.html">
+	  			<h2>Making</h2>
+	  			<p>blurble blurble blurble
+	  			</p>
+	  		</a>
   		</div><!--
   		--><div class="teaser">
-  			<h2>Working</h2>
-  			<p>blurble blurble blurble
-  			</p>
+  			<a href="working.html">
+	  			<h2>Working</h2>
+	  			<p>blurble blurble blurble
+	  			</p>
+	  		</a>
   		</div>
-  </section><!--main-->
+  </section><!--grid-->
 
-  <footer class="container nav">
-  	<div>
+  <footer class="container">
+  	<div class="left-abs">
   		© DocLJN 2017
   	</div>
   	<div>
-  		github twitter
+  		<ul class="nav right-abs">
+  			<li><a href="https://github.com/docljn" target="_blank"><img src="assets/images/github-64px.png" alt="github profile"> </a>
+  			</li><!--
+  			--><li><a href="https://twitter.com/drljnoble" target="_blank"><img src="assets/images/twitter-64px.png" alt="follow me on twitter"> </a>
+  		</ul>
+
   	</div>
   </footer>
 
