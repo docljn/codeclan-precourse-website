@@ -118,7 +118,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.5em;
@@ -132,12 +133,24 @@ h2 {
 	font-size: 2em;
 }
 
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	line-height: 1.2em;
+}
+
 a {
 	text-decoration: none;
 }
 
 a:visited {
 	color: #215ea8;
+}
+
+a:hover {
+	font-weight: bold;
 }
 
 
