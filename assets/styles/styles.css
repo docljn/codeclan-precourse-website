@@ -12,35 +12,82 @@
 
 /* DEFAULTS ensures all elements have same basic structure */
 
+/* GRID */
+
 .container,
 .grid,
-.grid-two {
+.grid-two,
+.grid-three {
 	margin: 0 auto; /* centers content on page */
 	width: 95%;
 	min-width: 36em;
 }
 
+.grid,
+.grid-two,
+.grid-three {
+	display: grid;
+	grid-gap: 10px 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px 20px;
+	grid-template-columns: 1fr;
 }
 
 .grid-two {
-	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px 20px;
+}
+
+.grid-three {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* GENERAL LAYOUT */
+
+/* tags */
+
+article {
+	border: 1px solid #215ea8;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+header,
+footer {
+	color: black;
+	display: block;
+	font-size: small;
+	line-height: 80px;
+	min-height: 80px;
+	position: relative;  /*hoping this will allow abs position inside*/
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+
+/* classes */
+
+.abs-left {
+	position: absolute;
+	left: 0;
+	margin-left: 0.5em;
+}
+
+.abs-right {
+	position: absolute;
+	right: 0;
+	margin-right: 0.5em;
 }
 
 .nav li{
 	display: inline-block;
 	height: 76px;
 	padding-left: 0.5em;
-}
-
-.square {
-	list-style-type: square;
 }
 
 .row {
@@ -64,33 +111,8 @@
 	text-align: center;
 }
 
-.left-abs {
-	position: absolute;
-	left: 0;
-	margin-left: 0.5em;
-}
 
-.right-abs {
-	position: absolute;
-	right: 0;
-	margin-right: 0.5em;
-}
 
-article {
-	border: 1px solid #215ea8;
-	border-radius: 10px;
-	padding: 20px;
-}
-
-header,
-footer {
-	color: black;
-	display: block;
-	font-size: small;
-	line-height: 80px;
-	min-height: 80px;
-	position: relative;  /*hoping this will allow abs position inside*/
-}
 
 
 
@@ -150,13 +172,12 @@ p {
 	line-height: 1.2em;
 }
 
-a {
-	text-decoration: none;
-}
-
+a,
 a:visited {
+	text-decoration: none;
 	color: #215ea8;
 }
+
 
 a:hover {
 	font-weight: bold;
