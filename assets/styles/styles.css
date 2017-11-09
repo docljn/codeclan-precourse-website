@@ -52,16 +52,26 @@ article {
 	border: 1px solid #215ea8;
 	border-radius: 10px;
 	padding: 20px;
+	position: relative;
 }
 
-header,
-footer {
+img {
+	border: 1px solid #215ea8;;
+	border-radius: 50%;
+}
+
+footer,
+header {
 	color: black;
 	display: block;
 	font-size: small;
 	line-height: 80px;
 	min-height: 80px;
 	position: relative;  /*hoping this will allow abs position inside*/
+}
+
+footer {
+	padding-top: 40px;
 }
 
 ol {
@@ -75,6 +85,12 @@ p {
 
 /* classes */
 
+.abs-bottom-center {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+
 .abs-left {
 	position: absolute;
 	left: 0;
@@ -85,6 +101,11 @@ p {
 	position: absolute;
 	right: 0;
 	margin-right: 0.5em;
+}
+
+.offset-40 {
+	margin-left:-40px;
+	margin-bottom: -40px;
 }
 
 .nav li{
