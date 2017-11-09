@@ -28,8 +28,7 @@
 .grid-three {
 	display: grid;
 	grid-gap: 10px 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px;
 }
 
 .grid {
@@ -67,6 +66,10 @@ footer {
 
 ol {
   list-style-type: decimal;
+}
+
+p {
+	padding-bottom: 4px;
 }
 
 
@@ -144,7 +147,8 @@ ol {
 
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
 	color: #215ea8;
 }
 
@@ -166,6 +170,7 @@ h2 {
 
 h3 {
 	font-size: 1.5em;
+	text-align: left;
 }
 
 p {
@@ -174,13 +179,14 @@ p {
 
 a,
 a:visited {
-	text-decoration: none;
 	color: #215ea8;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 
 a:hover {
-	font-weight: bold;
+	text-shadow: 1px -1px #200;
 }
 
 
